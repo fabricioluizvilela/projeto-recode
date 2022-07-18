@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* NAVBAR */
+
+.logo {
+  width: 120px;
+  height: 85px;
+}
+
+.navbar-nav > li > a {
+  color: #d0ef8e;
+  font-size: 20px;
+}
+.navbar-nav > li:hover > a,
+.navbar-nav > li.active > a {
+  color: #92aa39;
+}
+
+.bg-nav {
+  background-color: #2e3903;
+}
+
+.btn-nav {
+  background: #92aa39;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #d0ef8e;
+}
+
+.btn-nav:hover {
+  background: #d0ef8e;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #92aa39;
+}
+
+.mr-separador {
+  margin-right: 40px;
+}
+/* FIM NAVBAR */
+
+/* Parte Informativo do EDIOS */
+.bg-downNave {
+  background: #ededed;
+}
+
+.linha {
+  color: #9c9c9c;
+}
+
+.h1-edios {
+  color: #0e0e0e;
+}
+
+.p-edios {
+  color: #595959;
+}
+
+.saibaMais {
+  text-decoration: none;
+  border-radius: 4px;
+  background: #cccccc;
+  padding: 10px 20px;
+  color: #2e2e2e;
+}
+
+.saibaMais:hover {
+  text-decoration: none;
+  border-radius: 4px;
+  background: #2e2e2e;
+  padding: 10px 20px;
+  color: #cccccc;
+}
+
+/* Fim da parte informativa */
+
+.h1-main {
+  color: #405007;
+}
+
+.imagem-centralizada {
+  width: 800px;
+  height: 400px;
+}
+
+.bg-footer {
+  background: #2e2e2e;
+}
+
+@media (max-width: 1094px) {
+  .alinhar {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .alinhar {
+    text-align: center;
+  }
+}
+
+@media (max-width: 981px) {
+  .diminuir {
+    width: 30%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

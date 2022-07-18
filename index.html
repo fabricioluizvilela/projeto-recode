@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edios Social</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Modal do login -->
+  <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="titulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="titulo">Entre na Sua Conta</h5>
+        </div>
+
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail">
+            </div>
+            <div class="mb-3">
+              <label for="loginSenha" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="loginSenha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+          </form>
+          <div id="emailHelp" class="form-text">Esqueceu a senha <a href=" #">clique aqui</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim do modal do login -->
+
+
+  <!-- Inicio NavBar -->
+  <nav class="navbar navbar-expand-lg bg-nav box-shadow ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="img/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item dropdown mr-separador">
+            <a class="nav-link dropdown-toggle fonte-nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Edios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item fonte-nav" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="quemSomos.html">Quem Somos</a></li>
+              <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+            </ul>
+          </li>
+
+          <li class=" nav-item mr-separador">
+            <a class="nav-link" aria-current="page" href="sejaUmAluno.html">Seja um aluno</a>
+          </li>
+          <li class="nav-item mr-separador">
+            <a class="nav-link" href="sejaumapoiador.html">Seja um apoiador</a>
+          </li>
+          <li class="nav-item mr-separador">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-login" href="#">Login</a>
+          </li>
+
+          <li class="nav-item mr-separador">
+            <a class="diminuir nav-link btn-nav" href="#">DOAÇÃO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container-fluid bg-downNave">
+    <div class="row">
+      <div class="alinhar col-md-6">
+        <hr class="linha">
+        <span>EDIOS</span>
+        <h1 class="display-6 h1-edios">Edios Social fazendo a diferença.</h1>
+        <p class="p-edios mb-5">
+          Na vida de jovens e adolescentes, que tem um sonho de conquistar o seu lugar no âmbito digital, o projeto irá diminuir a falta de acesso a equipamentos como: computadores, notbook, telefone celular e internet, além disso
+          capacitar o jovem para o mercado de trabalho.
+        </p>
+        <!-- <a class="btn btn-secondary" href="#">Saiba mais</a> -->
+        <div class="mb-4">
+          <a class="saibaMais" href="quemSomos.html">Saiba mais</a>
+        </div>
+      </div>
+      <!-- <div class="col-2"></div> -->
+      <div class="col-md-6 text-center text-md-end py-4 alinhar">
+        <img class="rounded-1" src="img/img_crianças.png" alt="Crianças">
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid py-5">
+    <div class="row">
+      <div class="col-1">
+        <hr class="linha">
+      </div>
+      <div class="col-10 text-white text-center">
+        <h2 class="h1-main display-6">
+          Acompanhe o trabalho que a Edios Social tem desempenhado
+        </h2>
+      </div>
+      <div class="col-1">
+        <hr class="linha">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid">
+    <div class="row text-center">
+      <div class="col-lg">
+        <div class="galeria-imagem">
+          <img class="img-fluid rounded-1" src="img/tecnologia.jpg" alt="Tecnologia">
+          <p class="mt-5">
+            Ao capacitarmos alunos através do amparo social deste projeto. Teremos um alunos, os quais, terão a mesma chance de estudar com relação aos alunos que já possuem acesso a estas tecnologias.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="galeria-imagem">
+          <img class="img-fluid rounded-1" src="img/criancasEstudando.png" alt="Crianças Estudando">
+          <p class="mt-5">
+            Isso torna o aluno mais encorajado a realizar seus sonhos, através do estudo. Dessa forma, alunos, que se destacarem e mostrarem interesse e alcançarem notas na média ou superior em sua escola, através de seus esforços.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg">
+        <div class="galeria-imagem">
+          <img class="img-fluid rounded-1" src="img/adolescenteEstudando.png" alt="Adolescente Estudando">
+          <p class="mt-5">
+            Ganhará através de nosso projeto social um computador, notebook ou celular. O que fará que o jovem e o adolescente que antes não tinha acesso e tão pouco perspectiva a este meio digital.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg">
+        <div class="galeria-imagem">
+          <img class="img-fluid rounded-1" src="img/img_social.png" alt="Social">
+          <p class="mt-5">
+            Aumente ainda mais o seu potencial, além de se capacitar profissionalmente, ao passo que em nosso ponto de vista, acaba se tornando cada vez mais igualitário para nossos jovens.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- carousel -->
+  <section class="container-fluid">
+
+    <div class="row mt-5">
+      <div class="col-lg-7 p-4">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/carousel1.jpg" class="d-block w-100 imagem-centralizada" alt="Carrosel">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carouel2.jpg" class="d-block w-100 imagem-centralizada" alt="Fernando de Noronha">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carousel3.jpg" class="d-block w-100 imagem-centralizada" alt="Fernando de Noronha">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Fim carousel -->
+
+      <div class="col-lg-5 p-5">
+        <h4 class="display-6">Capacitar nossos alunos, para que passem a geração futura o seu próprio legado.</h4>
+        <p class="lead">
+          Seja o gestor dessa ideia!!! <strong></strong> Realize a transformação de um aluno, por doação, voluntariádo ou apadrinhamento
+        </p>
+
+        <div class="input-group mb-3">
+          <a class="btn-nav text-center" href="contato.html">SEJA UM PATROCINADOR</a>
+        </div>
+      </div>
+  </section>
+  <!-- </section> -->
+
+  <footer class="bg-footer text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">EDIOS</h4>
+          <ul class="list-unstyled">
+            <li><a href="quemSomos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unstyled">
+            <li><a href="local.html">Recife</a></li>
+            <li><a href="local.html">São Paulo</a></li>
+            <li><a href="local.html">Rio de Janeiro</a></li>
+            <li><a href="local.html">Santa Catarina</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled text-secondary">
+            <li>ediossocial@edios.com.br</li>
+            <li>+55 81 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Instagram</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Twitter</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Edios Social © 2022. Direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

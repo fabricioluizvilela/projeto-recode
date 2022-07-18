@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/doacao.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer></script>
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/c1cec5f8a7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Inicio NavBar -->
+  <nav class="navbar navbar-expand-lg bg-nav box-shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="img/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item dropdown mr-separador">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Edios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="quemSomos.html">Quem Somos</a></li>
+              <li><a class="dropdown-item" href="contato.html">Contato</a></li>
+            </ul>
+          </li>
+
+          <li class=" nav-item mr-separador">
+            <a class="nav-link" aria-current="page" href="sejaUmAluno.html">Seja um aluno</a>
+          </li>
+          <li class="nav-item mr-separador">
+            <a class="nav-link" href="sejaumapoiador.html">Seja um apoiador</a>
+          </li>
+          <li class="nav-item mr-separador">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+
+          <li class="nav-item mr-separador">
+            <a class="nav-link btn-nav" href="doacao.html">DOAÇÃO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+
+    <!--Section: Contato-->
+    <section class="container mb-4">
+
+      <!--Section heading-->
+      <h1 class="h1-responsive font-weight-bold text-center my-4 h1-main">Faça uma doação para o Edios Social</h1>
+      <!--Section description-->
+      <p class="text-center w-responsive mx-auto mb-5">Seja a trilha de conhecimento dos alunos da nova geração!!</p>
+
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="name" class="">Seu nome</label>
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Informe o seu nome">
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="email" class="">Seu email</label>
+                  <input type="text" id="email" name="email" class="form-control" placeholder="Informe o seu e-mail">
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="cpf" class="">CPF</label>
+                  <input type="number" id="email" name="email" class="form-control" placeholder="Informe o seu CPF" maxlength="50">
+                  <label for="number" class=""></label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="data de nascimento" class="">Data de Nascimento</label>
+                  <input type="date" id="email" name="email" class="form-control" placeholder="Informe sua Data de Nascimento" maxlength="50">
+                  <label for="number" class=""></label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="telefone para contato" class="">telefone para contato</label>
+                  <input type="number" id="seu contato" name="telefone" class="form-control" placeholder="Informe seu telefone para contato" maxlength="50">
+                  <label for="number" class=""></label>
+                </div>
+              </div>
+              <!--Grid column-->
+              <!--Grid column-->
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <label for="Como conheceu a Edios Social?" class="">Indicaria à Edios Social?</label>
+                  <input type="" id="Pergunta Edios" name="email" class="form-control" placeholder="Descreva em poucas palavras" maxlength="200">
+                  <label for="text" class=""></label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <label for="Como conheceu a Edios Social?" class="">Como conheceu a Edios Social?</label>
+                  <input type="text" id="Pergunta Edios" name="email" class="form-control" placeholder="Descreva em poucas palavras" maxlength="200">
+                  <label for="text" class=""></label>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12">
+
+                  <div class="md-form mb-0">
+                    <label for="message">Sua mensagem para Edios Social</label>
+                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                  </div>
+
+                </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+          </div>
+          <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+              <p>São Paulo, Brazil</p>
+            </li>
+
+            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+              <p>+55 99 99999-9999</p>
+            </li>
+
+            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+              <p>contato@edios.com.br</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+      </div>
+
+    </section>
+    <!--Section: Contact v.2-->
+
+
+
+
+
+    <footer class="bg-footer text-white mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6">EDIOS</h4>
+            <ul class="list-unstyled">
+              <li><a href="quemSomos.html">Quem somos</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4 class="h6">LOCAIS</h4>
+            <ul class="list-unstyled">
+              <li><a href="local.html">Recife</a></li>
+              <li><a href="local.html">São Paulo</a></li>
+              <li><a href="local.html">Rio de Janeiro</a></li>
+              <li><a href="local.html">Santa Catarina</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h6">DADOS DE CONTATO</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>ediossocial@edios.com.br</li>
+              <li>+55 81 99999-9999</li>
+              <li>De Seg. à Sex. das 8h às 18h</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="h6">REDES SOCIAIS</h4>
+            <ul class="list-unstyled">
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Facebook</a></li>
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Instagram</a></li>
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Twitter</a></li>
+              <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">Edios Social © 2022. Direitos reservados.</p>
+      </div>
+    </footer>
+</body>
+
+</html>

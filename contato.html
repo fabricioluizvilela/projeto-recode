@@ -5,44 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contato</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="css/contato.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer></script>
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/c1cec5f8a7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-  <!-- Modal do login -->
-  <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="titulo" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="titulo">Entre na Sua Conta</h5>
-        </div>
-
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="loginEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="loginEmail">
-            </div>
-            <div class="mb-3">
-              <label for="loginSenha" class="form-label">Senha</label>
-              <input type="password" class="form-control" id="loginSenha">
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar na Conta</button>
-          </form>
-          <div id="emailHelp" class="form-text">Esqueceu a senha <a href=" #">clique aqui</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Fim do modal do login -->
-
 
   <!-- Inicio NavBar -->
   <nav class="navbar navbar-expand-lg bg-nav box-shadow">
@@ -74,117 +49,60 @@
             <a class="nav-link" href="sejaumapoiador.html">Seja um apoiador</a>
           </li>
           <li class="nav-item mr-separador">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-login" href="#">Login</a>
+            <a class="nav-link" href="login.html">Login</a>
           </li>
 
           <li class="nav-item mr-separador">
-            <a class="diminuir nav-link btn-nav" href="#">DOAÇÃO</a>
+            <a class="nav-link btn-nav" href="doacao.html">DOAÇÃO</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <hr class="linha">
+  <br>
+  <br>
 
 
-  <!--Section: Contato-->
-  <section class="container mb-4">
-
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4 h1-main">Contato</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-
-    <div class="row">
-
-      <!--Grid column-->
-      <div class="col-md-9 mb-md-0 mb-5">
-        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-          <!--Grid row-->
-          <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-6">
-              <div class="md-form mb-0">
-                <input type="text" id="name" name="name" class="form-control" placeholder="Informe o seu nome">
-                <label for="name" class="">Seu nome</label>
-              </div>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-md-6">
-              <div class="md-form mb-0">
-                <input type="text" id="email" name="email" class="form-control" placeholder="Informe o seu e-mail">
-                <label for="email" class="">Seu email</label>
-              </div>
-            </div>
-            <!--Grid column-->
-
+  <main>
+    <div id="contact-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="main-title">Entre em contato conosco</h3>
           </div>
-          <!--Grid row-->
-
-          <!--Grid row-->
-          <div class="row">
-            <div class="col-md-12">
-              <div class="md-form mb-0">
-                <input type="text" id="subject" name="subject" class="form-control">
-                <label for="subject" class="">Subject</label>
-              </div>
-            </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-phone"></i>
+            <p><span class="contact-title">Ligue para:</span> (31)99999-9999</p>
+            <p><span class="contact-title">Horários:</span> 8:00 - 20:00</p>
           </div>
-          <!--Grid row-->
-
-          <!--Grid row-->
-          <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-12">
-
-              <div class="md-form">
-                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                <label for="message">Sua mensagem</label>
-              </div>
-
-            </div>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-envelope"></i>
+            <p><span class="contact-title">Envie um e-mail:</span><br>edios@ediossocial.com.br</p>
           </div>
-          <!--Grid row-->
-
-        </form>
-
-        <div class="text-center text-md-left">
-          <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+          <div class="col-md-4 contact-box">
+            <i class="fas fa-map-marker-alt"></i>
+            <p><span class="contact-title">Visite-nos:</span><br> São Paulo, SP </p>
+          </div>
         </div>
-        <div class="status"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6" id="msg-box">
+              <p>Ou nos deixe uma mensagem:</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input type="email" class="form-control" placeholder="E-mail" name="email">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea class="form-control" rows="3" placeholder="Digite sua mensagem..." name="mensagem"></textarea>
+                <input type="submit" class="main-btn" value="Enviar">
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-3 text-center">
-        <ul class="list-unstyled mb-0">
-          <li><i class="fas fa-map-marker-alt fa-2x"></i>
-            <p>São Paulo, Brazil</p>
-          </li>
-
-          <li><i class="fas fa-phone mt-4 fa-2x"></i>
-            <p>+55 99 99999-9999</p>
-          </li>
-
-          <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-            <p>contato@edios.com.br</p>
-          </li>
-        </ul>
-      </div>
-      <!--Grid column-->
-
     </div>
-
-  </section>
-  <!--Section: Contact v.2-->
-
-
+  </main>
 
 
 
@@ -194,7 +112,7 @@
         <div class="col-md-3 col-6">
           <h4 class="h6">EDIOS</h4>
           <ul class="list-unstyled">
-            <li><a href="planos.html">Quem Somos</a></li>
+            <li><a href="quemSomos.html">Quem Somos</a></li>
             <li><a href="contato.html">Contato</a></li>
           </ul>
         </div>
@@ -204,7 +122,6 @@
             <li><a href="local.html">Recife</a></li>
             <li><a href="local.html">São Paulo</a></li>
             <li><a href="local.html">Rio de Janeiro</a></li>
-            <li><a href="local.html">Santa Catarina</a></li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -218,10 +135,10 @@
         <div class="col-md-2">
           <h4 class="h6">REDES SOCIAIS</h4>
           <ul class="list-unstyled">
-            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 130px">Facebook</a></li>
-            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 130px">Instagram</a></li>
-            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 130px">Twitter</a></li>
-            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 130px">Youtube</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Facebook</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Instagram</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Twitter</a></li>
+            <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="#" style="width: 140px">Youtube</a></li>
           </ul>
         </div>
       </div>
